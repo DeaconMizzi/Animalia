@@ -1,0 +1,158 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;600&display=swap');
+
+/* General Body Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+/* Header Styles */
+.header {
+    text-align: center;
+    background-color: #000; /* Black background for navbar */
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.header .logo img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Reset margin and padding for body and html */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%; /* Ensure body spans the full width */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #000; /* Black navbar */
+    width: 100vw; /* Ensure navbar spans the full width */
+    padding: 10px 0;
+    font-family: Arial, sans-serif;
+    position: sticky; /* Sticky navbar */
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0 auto; /* Center the navbar items */
+    padding: 0;
+    max-width: 1200px; /* Optional: Limit the width of the content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between items */
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff; /* White text */
+    text-transform: uppercase; /* Uppercase text */
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #f0a500; /* Gold on hover */
+}
+
+.navbar .divider {
+    color: #555; /* Divider color */
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+
+/* Navbar Responsive Design */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar .divider {
+        display: none; /* Hide dividers on mobile */
+    }
+}
+
+/* Section Styling */
+.section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    padding: 50px 100px; /* Increased padding for content space */
+    box-sizing: border-box;
+}
+
+.section:nth-child(odd) {
+    background-color: #635f75;
+    color: white;
+}
+
+.section:nth-child(even) {
+    background-color: #e2c564;
+    color: #1a1a1a;
+}
+
+/* Section Titles */
+.section h2 {
+    font-family: 'Anton', sans-serif; /* Square and bold font for titles */
+    font-size: 96px; /* Much larger title size */
+    font-weight: bold;
+    margin-bottom: 30px; /* More spacing below title */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Slight spacing for a blocky feel */
+    color: inherit; /* Match the section's text color */
+    line-height: 1.1; /* Tight line spacing for blocky effect */
+}
+
+/* Section Body Text */
+.section p,
+.section ul {
+    font-family: 'Open Sans', sans-serif; /* Contrasting clean font */
+    font-size: 24px; /* Larger size for better readability */
+    line-height: 2; /* Improved spacing for better flow */
+    font-weight: 400;
+    color: inherit; /* Match section text color */
+}
+
+/* Character Image */
+.character-image {
+    flex: 1;
+    max-width: 40%; /* Reduced width for more text space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.character-image img {
+    max-width: 100%;
+    max-height: 80%;
+}
+
+/* Content Block */
+.content {
+    flex: 1;
+    max-width: 60%; /* Increased content width */
+}

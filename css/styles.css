@@ -2846,8 +2846,8 @@ textarea.form-control-lg {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #ee0979;
-  --bs-btn-border-color: #ee0979;
+  --bs-btn-bg: #023047;
+  --bs-btn-border-color: #023047;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #ca0867;
   --bs-btn-hover-border-color: #be0761;
@@ -5974,7 +5974,7 @@ textarea.form-control-lg {
   left: 15%;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
-  color: #fff;
+  color: #000000;
   text-align: center;
 }
 
@@ -10858,67 +10858,81 @@ html {
 header.masthead {
   position: relative;
   overflow: hidden;
-  padding-top: calc(7rem + 72px);
-  padding-bottom: 7rem;
-  background-color: #e2c564;
+  padding-top: 5rem; /* Reduced padding for smaller height */
+  padding-bottom: 5rem;
+  background-color: #8ecae6;
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: scroll;
   background-size: cover;
 }
+
 header.masthead .masthead-content {
   z-index: 1;
   position: relative;
 }
+
 header.masthead .masthead-content .masthead-heading {
-  font-size: 4rem;
+  font-size: 3rem; /* Smaller font size for the heading */
 }
+
 header.masthead .masthead-content .masthead-subheading {
-  font-size: 2rem;
+  font-size: 1.5rem; /* Smaller font size for the subheading */
 }
+
+/* Background circles */
 header.masthead .bg-circle {
   z-index: 0;
   position: absolute;
   border-radius: 100%;
-  background-color: #1a1a1a;
+  background-color: #023047;
+  opacity: 20%;
 }
+
 header.masthead .bg-circle-1 {
-  height: 90rem;
-  width: 90rem;
-  bottom: -55rem;
-  left: -55rem;
+  height: 70rem; /* Reduced size of background circles */
+  width: 70rem;
+  bottom: -45rem;
+  left: -45rem;
 }
+
 header.masthead .bg-circle-2 {
-  height: 50rem;
-  width: 50rem;
-  top: -25rem;
-  right: -25rem;
+  height: 40rem;
+  width: 40rem;
+  top: -20rem;
+  right: -20rem;
 }
+
 header.masthead .bg-circle-3 {
-  height: 20rem;
-  width: 20rem;
-  bottom: -10rem;
+  height: 15rem;
+  width: 15rem;
+  bottom: -7rem;
   right: 5%;
 }
+
 header.masthead .bg-circle-4 {
-  height: 30rem;
-  width: 30rem;
-  top: -5rem;
+  height: 25rem;
+  width: 25rem;
+  top: -3rem;
   right: 35%;
 }
 
+/* Adjustments for larger screens */
 @media (min-width: 992px) {
   header.masthead {
-    padding-top: calc(10rem + 55px);
-    padding-bottom: 10rem;
+    padding-top: 7rem; /* Reduced top padding for larger screens */
+    padding-bottom: 7rem;
   }
+
   header.masthead .masthead-content .masthead-heading {
-    font-size: 6rem;
+    font-size: 4rem; /* Adjusted font size for larger screens */
   }
+
   header.masthead .masthead-content .masthead-subheading {
-    font-size: 4rem;
+    font-size: 2.5rem;
   }
 }
+
 
 .section-divider {
   border: none; /* Remove default border style */
@@ -10929,4 +10943,50 @@ header.masthead .bg-circle-4 {
   margin-left: auto; /* Center horizontally */
   margin-right: auto;
 }
+/* Ensure uniform image size for carousel */
+.carousel-item img {
+  width: 500px; /* Consistent image size */
+  height: 500px;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
+.carousel-item h5 {
+  font-size: 2rem; /* Increase the font size */
+  font-weight: bold; /* Make the name bold */
+  color: #000; /* White text color for visibility */
+  margin-top: 15px; /* Add spacing above the name */
+  text-align: center;
+  text-transform: uppercase; /* Optional: Capitalize all letters */
+}
+
+.carousel-item .btn {
+  margin-top: 10px;
+  padding: 15px 30px; /* Increased padding for a larger button */
+  font-size: 1.25rem; /* Increased font size */
+  text-transform: uppercase; /* Keep uppercase for consistency */
+  background-color: #219ebc; /* Blue background */
+  color: #ffffff; /* White text for readability */
+  border: none; /* Remove default border */
+  border-radius: 8px; /* Optional: make corners rounded */
+  transition: transform 0.2s ease, background-color 0.3s ease; /* Smooth hover effects */
+  margin-bottom: 10px;
+}
+
+.carousel-item .btn:hover {
+  background-color: #023047; /* Darker blue for hover effect */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+/* Carousel Navigation Buttons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5); /* Visible background for buttons */
+  border-radius: 50%; /* Circular buttons */
+}
+
+/* Optional: Adjust button size */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 50px;
+  height: 50px;
+}

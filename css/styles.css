@@ -11011,3 +11011,6 @@ header.masthead .bg-circle-4 {
   color: #000; /* Black color for text */
   margin-top: 10px; /* Add slight margin to separate from title */
 }
+.cheetah-page .masthead {
+  background-color: #e2c564; /* Cheetah's aesthetic color */
+}

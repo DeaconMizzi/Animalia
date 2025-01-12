@@ -10990,3 +10990,24 @@ header.masthead .bg-circle-4 {
   width: 50px;
   height: 50px;
 }
+.character-page .section h2 {
+  font-family: 'Anton', sans-serif; /* Square and bold font for titles */
+  font-size: 3rem; /* Adjusted title size for a cleaner look */
+  font-weight: bold;
+  margin-bottom: 20px; /* Space below the heading */
+  text-transform: uppercase; /* Keep text blocky */
+  letter-spacing: 1px; /* Slight letter spacing for polish */
+  color: #000; /* Black color for headings */
+  line-height: 1.2; /* Adjusted line height for better spacing */
+}
+
+/* Scoped Style for Section Body Text on Character Pages */
+.character-page .section p,
+.character-page .section ul {
+  font-family: 'Open Sans', sans-serif; /* Contrasting clean font */
+  font-size: 1.25rem; /* Medium text size for readability */
+  line-height: 1.8; /* Improved spacing for better readability */
+  font-weight: 400;
+  color: #000; /* Black color for text */
+  margin-top: 10px; /* Add slight margin to separate from title */
+}

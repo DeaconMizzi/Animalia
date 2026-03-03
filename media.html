@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="" />
     <meta name="author" content="" />
+    <meta name="theme-color" content="#023047" />
     <title>Animalia - Media</title>
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Font Awesome icons (free version)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
-    <!-- Google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
-<body id="page-top">
-<!-- Navbar -->
+<body id="page-top" class="media-page">
 <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
     <div class="container px-5">
         <a class="navbar-brand" href="index.html">Animalia</a>
@@ -27,81 +26,107 @@
                 <li class="nav-item"><a class="nav-link" href="index.html">Story</a></li>
                 <li class="nav-item"><a class="nav-link" href="characters.html">Characters</a></li>
                 <li class="nav-item"><a class="nav-link" href="news.html">News</a></li>
-                <li class="nav-item"><a class="nav-link active" href="media.html">Media</a></li>
+                <li class="nav-item"><a class="nav-link active" href="media.html" aria-current="page">Media</a></li>
             </ul>
         </div>
     </div>
 </nav>
-
-<!-- Header -->
 <header class="masthead text-center text-white">
     <div class="masthead-content">
         <div class="container px-5">
+            <p class="eyebrow">Social Feed</p>
             <h1 class="masthead-heading mb-0">Media</h1>
-            <h2 class="masthead-subheading mb-0">See What’s Happening Online!</h2>
+            <h2 class="masthead-subheading mb-0">See What Is Happening Online</h2>
         </div>
     </div>
 </header>
-
-<!-- Latest Posts Section -->
 <section id="latest" class="content-section">
     <div class="container px-5">
+        <p class="eyebrow">Recent Uploads</p>
         <h2 class="text-center display-4 mb-5">Latest Posts</h2>
-        <!-- Grid Layout -->
         <div class="row row-cols-1 row-cols-md-3 g-4">
-            <!-- Post Image 1 -->
             <div class="col">
-                <div class="card">
-                    <img src="assets/img/post1.png" class="card-img-top img-fluid rounded" alt="Post Image 1">
-                </div>
+                <article class="card media-card h-100">
+                    <img src="assets/img/post1.png" class="card-img-top img-fluid rounded" alt="Concept frame from Animalia post 1" loading="lazy" decoding="async">
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span>Jan 10, 2025</span>
+                            <span class="chip">Instagram</span>
+                        </div>
+                        <h3 class="h5 mb-2">Crystal Reveal Sketch</h3>
+                        <p class="mb-0">Early visual notes for how power activation should feel on screen.</p>
+                    </div>
+                </article>
             </div>
-            <!-- Post Image 2 -->
             <div class="col">
-                <div class="card">
-                    <img src="assets/img/post2.png" class="card-img-top img-fluid rounded" alt="Post Image 2">
-                </div>
+                <article class="card media-card h-100">
+                    <img src="assets/img/post2.png" class="card-img-top img-fluid rounded" alt="Character action frame from Animalia post 2" loading="lazy" decoding="async">
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span>Jan 12, 2025</span>
+                            <span class="chip">Update</span>
+                        </div>
+                        <h3 class="h5 mb-2">Combat Blocking Pass</h3>
+                        <p class="mb-0">A quick capture from a movement pass focused on readability and pace.</p>
+                    </div>
+                </article>
             </div>
-            <!-- Post Image 3 -->
             <div class="col">
-                <div class="card">
-                    <img src="assets/img/post3.png" class="card-img-top img-fluid rounded" alt="Post Image 3">
-                </div>
+                <article class="card media-card h-100">
+                    <img src="assets/img/post3.png" class="card-img-top img-fluid rounded" alt="Team lineup visual from Animalia post 3" loading="lazy" decoding="async">
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span>Jan 13, 2025</span>
+                            <span class="chip">Teaser</span>
+                        </div>
+                        <h3 class="h5 mb-2">Team Mood Shot</h3>
+                        <p class="mb-0">Color and lighting exploration for the main cast in high-tension scenes.</p>
+                    </div>
+                </article>
             </div>
         </div>
     </div>
 </section>
-
-<!-- Behind The Scenes Section -->
 <section id="bts" class="content-section">
     <div class="container px-5">
+        <p class="eyebrow">Production Notes</p>
         <h2 class="text-center display-4 mb-5">Behind The Scenes</h2>
-        <!-- Grid Layout -->
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <!-- BTS Image 1 -->
+        <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col">
-                <div class="card">
-                    <img src="assets/img/bts1.png" class="card-img-top img-fluid rounded" alt="BTS Image 1">
-                </div>
+                <article class="card media-card h-100">
+                    <img src="assets/img/bts1.png" class="card-img-top img-fluid rounded" alt="Behind the scenes storyboard snapshot 1" loading="lazy" decoding="async">
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span>Jan 09, 2025</span>
+                            <span class="chip">Storyboard</span>
+                        </div>
+                        <h3 class="h5 mb-2">Scene Planning Wall</h3>
+                        <p class="mb-0">The team maps out sequence flow before animation begins.</p>
+                    </div>
+                </article>
             </div>
-            <!-- BTS Image 2 -->
             <div class="col">
-                <div class="card">
-                    <img src="assets/img/bts2.png" class="card-img-top img-fluid rounded" alt="BTS Image 2">
-                </div>
+                <article class="card media-card h-100">
+                    <img src="assets/img/bts2.png" class="card-img-top img-fluid rounded" alt="Behind the scenes production snapshot 2" loading="lazy" decoding="async">
+                    <div class="card-body">
+                        <div class="card-meta">
+                            <span>Jan 11, 2025</span>
+                            <span class="chip">Pipeline</span>
+                        </div>
+                        <h3 class="h5 mb-2">Iteration Session</h3>
+                        <p class="mb-0">Refining movement timing and effects before the final render pass.</p>
+                    </div>
+                </article>
             </div>
         </div>
     </div>
-    <br>
 </section>
-
-<!-- Footer -->
 <footer class="py-5 bg-black">
     <div class="container px-5">
         <p class="m-0 text-center text-white small">Copyright &copy; Animalia 2025</p>
     </div>
 </footer>
-
-<!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
